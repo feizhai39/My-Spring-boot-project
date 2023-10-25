@@ -14,7 +14,8 @@ public class HTTPInterceptor implements HandlerInterceptor {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         System.out.println("pre handle");
-        return HandlerInterceptor.super.preHandle(request, response, handler);
+        //return HandlerInterceptor.super.preHandle(request, response, handler);
+        return true;
     }
     //before sending the response to the client
     @Override
